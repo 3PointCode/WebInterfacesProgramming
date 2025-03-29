@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>White Crow Books</h1>
+        <nav>
+            <a href="index.html">Main Page</a>
+            <a href="index2.html">Add a Book</a>
+        </nav>
+    </header>
+
+    <section id="add-book">
+        <h2>Add new White Crow</h2>
+        <form id="add-book-form">
+            <label for="book-title">Title:</label>
+            <input type="text" id="book-title" name="title" required>
+
+            <label for="book-author">Author:</label>
+            <input type="text" id="book-author" name="author" required>
+
+            <label for="book-price">Price:</label>
+            <input type="number" id="book-price" name="price" required>
+
+            <label for="book-cover">Cover type:</label>
+            <select id="book-cover" name="cover" required>
+                <option value="hard">Hard</option>
+                <option value="soft">Soft</option>
+            </select>
+
+            <label for="book-pages">Pages number:</label>
+            <input type="number" id="book-pages" name="pages" required>
+
+            <label for="book-description">Description:</label>
+            <textarea id="book-description" name="description" required></textarea>
+
+            <button type="submit">Add a Book</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 White Crow Bookstore</p>
+    </footer>
+</body>

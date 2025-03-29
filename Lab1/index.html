@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Crow Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>White Crow Books</h1>
+        <nav>
+            <a href="index.html">Main Page</a>
+            <a href="index2.thml">Add a book</a>
+            <a href="index2.html">Login</a>
+            <a href="index2.html">Cart</a>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Search for your White Crow</h2>
+        <form id="search-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" placeholder="Max price">
+
+            <label for="cover">Cover Type:</label>
+            <select id="cover" name="cover">
+                <option value="">Select</option>
+                <option value="hard">Hard</option>
+                <option value="soft">Soft</option>
+            </select>
+
+            <label for="pages">Page number:</label>
+            <input type="number" id="pages" name="pages" placeholder="Lowest page number">
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="books-list">
+        <h2>Search results</h2>
+        <ul id="books">
+
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 White Crow Bookstore</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
